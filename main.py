@@ -1,3 +1,5 @@
+#try - exceptions (ZeroDivisionError, NameError, ValueError, TypeError)
+
 try:
   a=100
   b=0
