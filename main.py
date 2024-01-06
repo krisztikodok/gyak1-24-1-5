@@ -26,6 +26,7 @@ def num_in():
 
 num_in()
 """
+#ValueError
 def ve1():
   try:
     val=int("abc")
@@ -46,6 +47,27 @@ def ve2():
 
 ve2()
 
-
+#TypeError
 def typeErrorCase():
-  
+  try:
+    hi="Hello"+100
+    #i=3
+  except TypeError as t:
+    print(f"Caught a TypeError: {t}")
+  else:
+    print("No error detected")
+
+typeErrorCase()
+
+#NameError
+
+def nme():
+  try:
+    #print("Hey")
+    print(some_variable)
+  except NameError as n:
+    print(F"Caught a NameError: {n}")
+  else:
+    print("No exception detected")
+
+nme()
